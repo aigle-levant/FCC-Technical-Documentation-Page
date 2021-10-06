@@ -1,0 +1,144 @@
+/*This is for the body. The elements used are going to be for the font-size, the background color
+    and a few more*/
+    body{
+        background-color: #F8F4E3;
+        font-size: 16px;
+    }
+    /*Navigation bar*/
+    #navbar{
+        position: fixed;
+        width: 300px;
+        font-family: "Cinzel", serif;
+        line-height: 3rem;
+        background-color: #F8F4E3;
+        padding: 10px;
+        font-size: 1.7rem;
+        top: 0;
+        left: 0;
+        height: 100%;
+        border-right: 2px solid #4d4e53;
+    }
+    ul{
+        height: 70%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    li{
+        list-style: none;
+        font-family: "Rubik", sans-serif;
+        border-top: 1px solid #4d4e53;
+        width: 100%;
+    }
+    li:hover{
+        background-color: #4d4e53;
+        color: #F8F4E3;
+    }
+    a{
+        cursor: pointer;
+        display: block;
+        text-decoration: none;
+        padding: 10px 20px;
+        color: inherit;
+    }
+    a:focus{
+        outline: none;
+    }
+    /*Main*/
+    #main-doc{
+        position: absolute;
+        padding: 2rem;
+        margin-left: 300px;
+    }
+    /*sections*/
+    .main-section{
+        color: #0FC4B1;
+        font-size: 2rem;
+        font-family: "Cinzel", serif;
+        font-weight: 700;
+    }
+    /*Quotes*/
+    .quotes{
+        margin: 12px 0 24px;
+        padding: 10px;
+        background-color: midnightblue;
+    }
+    .quote-text{
+        font-family: "Rubik", monospace;
+        font-size: 0.9rem;
+        font-weight: lighter;
+        color:white;
+        font-style: italic;
+    }
+    /*Headings, paragraphs and features...*/
+    .heading{
+        font-size: 1.8rem;
+        color: #4d4e53;
+        font-family: "Rubik", sans-serif;
+    }
+    .paragraph{
+        font-size: 0.9rem;
+        color: black;
+        font-family: "Montserrat", sans-serif;
+        line-height: 1.7;
+    }
+    .features{
+        color: black;
+        font-family: "Montserrat", sans-serif;
+    }
+    .link{
+        font-size: 1rem;
+    }
+    /*Images*/
+    .cover-image{
+        width: 300px;
+        float: right;
+        margin: 10px;
+        background: rgba( 255, 255, 255, 0.2 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 10.5px );
+        -webkit-backdrop-filter: blur( 10.5px );
+        border-radius: 10px;
+    }
+    .image{
+        width: 500px;
+        background: rgba( 255, 255, 255, 0.5 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 17px );
+        -webkit-backdrop-filter: blur( 17px );
+        border-radius: 10px;
+        margin: 10px;
+    }
+    /*Attributes*/
+    strong{
+        color: #0FC4B1;
+        font-weight: bold;
+    }
+    /*Media queries*/
+    @media(max-width:815px){
+        #header{
+            text-align: center;
+            font-size: 3rem;
+        }
+        #navbar{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            border: none;
+            z-index: 1;
+            padding: 10px;
+            max-height: 270px;
+            margin: 0;
+            border-bottom: 2px solid #4d4e53;
+        }
+        #navbar ul{
+            height: 200px;
+          padding: 2px;
+          margin-right: 10px;
+            border-bottom: 1px solid #4d4e53;
+        }
+        #main-doc{
+            position: relative;
+            margin-left: 0px;
+            margin-top: 400px;
+        }
+    }
